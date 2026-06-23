@@ -16,7 +16,7 @@ jobs:
           key: ${{ secrets.MOZAIKATEMPLATE_KEY }}
           script: |
             #Переключаемся в нужную папку
-            cd ~/medovye-podarki.rf/public_html/wp-content/themes/honeypresent
+            cd ~/medovye-podarki.rf/public_html/wp-content/themes/honey-present-wordpress-theme
             
             #Клинируем репозиторий в папку (только для первой выгрузки!!!)
             #git clone https://github.com/site100ru/honeypresent.git .
@@ -25,5 +25,5 @@ jobs:
             git pull
             
             #Если кто то изменил файлы на сервере минуя GitHub, перезаписываем версию на сервере из GitHub
-            #git reset --hard HEAD
-            #git pull origin main
+            git reset --hard HEAD
+            git pull origin main
