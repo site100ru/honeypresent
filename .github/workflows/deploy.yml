@@ -16,10 +16,10 @@ jobs:
           key: ${{ secrets.MOZAIKATEMPLATE_KEY }}
           script: |
             #Переключаемся в нужную папку
-            #cd ~/mozaikatemplate.ru/public_html/wp-content/themes/mozaika
+            cd ~/medovye-podarki.rf/public_html/wp-content/themes/honeypresent
             
             #Клинируем репозиторий в папку (только для первой выгрузки!!!)
-            #git clone https://github.com/site100ru/mozaika.git .
+            git clone https://github.com/site100ru/honeypresent.git .
             
             #Копируем репозиторий в папку
             #git pull
